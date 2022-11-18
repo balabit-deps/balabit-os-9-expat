@@ -1,3 +1,26 @@
+expat (2.4.7-1ubuntu0.2) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: use-after-free
+    - debian/patches/CVE-2022-43680-1.patch: adds tests to cover
+      DTD destruction in XML_ExternalEntityParserCreate in
+      expat/tests/runtests.c.
+    - debian/patches/CVE-2022-43680-2.patch: fix overeager DTD
+      destruction in XML_ExternalEntityParserCreate in
+      expat/lib/xmlparse.c.
+    - CVE-2022-43680
+
+ -- David Fernandez Gonzalez <david.fernandezgonzalez@canonical.com>  Fri, 18 Nov 2022 12:21:42 +0100
+
+expat (2.4.7-1ubuntu0.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Use-after-free in doContent
+    - debian/patches/CVE-2022-40674.patch: ensure storeRawNames()
+      is always called in func internalEntityProcessor if handling
+      unbalanced tags in expat/lib/xmlparse.c.
+    - CVE-2022-40674
+
+ -- David Fernandez Gonzalez <david.fernandezgonzalez@canonical.com>  Tue, 15 Nov 2022 16:01:53 +0100
+
 expat (2.4.7-1) unstable; urgency=medium
 
   * New upstream release:

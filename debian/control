@@ -1,7 +1,8 @@
 Source: expat
 Section: text
 Priority: optional
-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
 Build-Depends: debhelper-compat (= 13), docbook-to-man,
  docbook2x <!stage1>, libbsd-dev [kfreebsd-amd64 kfreebsd-i386 hurd-i386]
 Rules-Requires-Root: no

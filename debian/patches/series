@@ -1,2 +1,5 @@
 fix-expat-noconfig.patch
 fix-expat-cmake.patch
+CVE-2022-40674.patch
+CVE-2022-43680-1.patch
+CVE-2022-43680-2.patch
