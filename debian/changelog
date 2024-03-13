@@ -1,3 +1,15 @@
+expat (2.4.7-1ubuntu0.3) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: denial-of-service
+    - debian/patches/CVE-2023-52425.patch: Speed up parsing of big tokens.
+    - CVE-2023-52425
+  * SECURITY UPDATE: denial-of-service
+    - debian/patches/CVE-2024-28757.patch: Detect billion laughs attack with
+      isolated external parser.
+    - CVE-2024-28757
+
+ -- Fabian Toepfer <fabian.toepfer@canonical.com>  Wed, 13 Mar 2024 14:28:54 +0100
+
 expat (2.4.7-1ubuntu0.2) jammy-security; urgency=medium
 
   * SECURITY UPDATE: use-after-free
