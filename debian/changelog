@@ -1,3 +1,21 @@
+expat (2.4.7-1ubuntu0.4) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: invalid input length
+    - CVE-2024-45490-*.patch: adds a check to the XML_ParseBuffer function of
+      expat/lib/xmlparse.c to identify and error out if a negative length is
+      provided.
+    - CVE-2024-45490
+  * SECURITY UPDATE: integer overflow
+    - CVE-2024-45491.patch: adds a check to the dtdCopy function of
+      expat/lib/xmlparse.c to detect and prevent an integer overflow.
+    - CVE-2024-45491
+  * SECURITY UPDATE: integer overflow
+    - CVE-2024-45492.patch: adds a check to the nextScaffoldPart function of
+      expat/lib/xmlparse.c to detect and prevent an integer overflow.
+    - CVE-2024-45492
+
+ -- Ian Constantin <ian.constantin@canonical.com>  Tue, 10 Sep 2024 13:17:45 +0300
+
 expat (2.4.7-1ubuntu0.3) jammy-security; urgency=medium
 
   * SECURITY UPDATE: denial-of-service
