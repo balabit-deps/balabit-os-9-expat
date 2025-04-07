@@ -1,3 +1,22 @@
+expat (2.4.7-1ubuntu0.6) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: denial of service via stack overflow
+    - debian/patches/CVE-2024-8176-pre.patch: Remove XML_DTD guards
+      before is_param accesses
+    - debian/patches/CVE-2024-8176-test-pre-1.patch: minicheck: Add
+      fail_unless() macro
+    - debian/patches/CVE-2024-8176-test-pre-2.patch: tests: Rename
+      _fail_unless to _assert_true for clarity
+    - debian/patches/CVE-2024-8176-test-pre-3.patch: minicheck: Add
+      simple subtest support
+    - debian/patches/CVE-2024-8176-1.patch: Resolve the recursion during
+      entity processing to prevent stack overflow
+    - debian/patches/CVE-2024-8176-2.patch: Stop updating event pointer
+      on exit for reentry
+    - CVE-2024-8176
+
+ -- Vyom Yadav <vyom.yadav@canonical.com>  Mon, 07 Apr 2025 20:07:15 +0530
+
 expat (2.4.7-1ubuntu0.5) jammy-security; urgency=medium
 
   * SECURITY UPDATE: denial-of-service via XML_ResumeParser                   
