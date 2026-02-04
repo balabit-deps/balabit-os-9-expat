@@ -1,3 +1,18 @@
+expat (2.4.7-1ubuntu0.7) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: NULL pointer dereference
+    - debian/patches/CVE-2026-24515.patch: updates
+      XML_ExternalEntityParserCreate to copy unknown encoding handler user
+      data in expat/lib/xmlparse.c.
+    - CVE-2026-24515
+  * SECURITY UPDATE: integer overflow
+    - debian/patches/CVE-2026-25210*.patch: adds an integer overflow check for
+      tag buffer reallocation in the doContent function of
+      expat/lib/xmlparse.c.
+    - CVE-2026-25210
+
+ -- Ian Constantin <ian.constantin@canonical.com>  Wed, 04 Feb 2026 17:24:04 +0200
+
 expat (2.4.7-1ubuntu0.6) jammy-security; urgency=medium
 
   * SECURITY UPDATE: denial of service via stack overflow
